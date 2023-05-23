@@ -21,12 +21,12 @@
   display: block;
   width: 100%;
   max-width: 30px;
-  margin: 10px 0 30px;
+  margin: 10px 0 20px;
 }
 .page1Body__sideBarSeparateItem {
   width: 100%;
   border-bottom: 1px solid #ececec;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .page1Body__sideBarTitle {
@@ -146,24 +146,26 @@
 .page1Body__sideBarRecentItemPrice {
   font-weight: var(--font-weight-bold);
 }
+.page1Body__sideBarRecentItemPriceHide {
+  font-weight: var(--font-weight-bold);
+  text-decoration: line-through;
+  color: #888888;
+}
 
 .page1Body__content {
   margin-top: 30px;
-
+  margin-left: 30px;
   flex: 8;
 }
 
 .page1Body__contentList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: flex-start;
-  // margin-right: 30px;
+  justify-content: space-between;
 }
 
 .page1Body__contentItem {
   width: 30%;
-  margin-left: 20px;
 }
 
 .item__wrapper {
@@ -223,6 +225,7 @@
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 30px;
+  padding-right: 20px;
 }
 
 .page1Sub__bestSelling {
@@ -230,6 +233,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-right: 20px;
 }
 
 .page1Sub__featured {
@@ -237,6 +241,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-right: 20px;
 }
 
 .page1Sub__rate {

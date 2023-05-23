@@ -140,28 +140,53 @@ function Page1Body() {
       <div className={cx("page1Body__content")}>
         <div className={cx("page1Body__contentList")}>
           <div className={cx("page1Body__contentItem")}>
-            <Item title="" numProduct="" src="" />
+            <Item
+              title="clothing"
+              numProduct="12"
+              src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_4_front-494x593.jpg"
+            />
           </div>
           <div className={cx("page1Body__contentItem")}>
-            <Item title="" numProduct="" src="" />
+            <Item
+              title="women"
+              numProduct="18"
+              src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/589864-5295_1-494x593.jpeg"
+            />
           </div>
           <div className={cx("page1Body__contentItem")}>
-            <Item title="" numProduct="" src="" />
+            <Item
+              title="booking"
+              numProduct="6"
+              src="https://flatsome3.uxthemes.com/wp-content/uploads/2016/07/booking-494x593.jpg"
+            />
           </div>
           <div className={cx("page1Body__contentItem")}>
-            <Item title="" numProduct="" src="" />
+            <Item
+              title="men"
+              numProduct="9"
+              src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/602779-0083_1-494x593.jpeg"
+            />
           </div>
           <div className={cx("page1Body__contentItem")}>
-            <Item title="" numProduct="" src="" />
+            <Item
+              title="bags"
+              numProduct="6"
+              src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/282259-0001_2-494x593.jpeg"
+            />
           </div>
           <div className={cx("page1Body__contentItem")}>
-            <Item title="" numProduct="" src="" />
+            <Item
+              title="music"
+              numProduct="6"
+              src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/cd_5_angle-494x593.jpg"
+            />
           </div>
           <div className={cx("page1Body__contentItem")}>
-            <Item title="" numProduct="" src="" />
-          </div>
-          <div className={cx("page1Body__contentItem")}>
-            <Item title="" numProduct="" src="" />
+            <Item
+              title="Posters"
+              numProduct="5"
+              src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/poster_1_up-494x593.jpg"
+            />
           </div>
         </div>
       </div>

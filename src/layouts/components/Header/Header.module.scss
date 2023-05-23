@@ -24,6 +24,7 @@
 }
 
 .headerTop__navItem {
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -31,6 +32,26 @@
     color: #fff;
     cursor: pointer;
   }
+}
+.headerTop__Languages {
+  &:hover > .headerTop__LanguagesDecs {
+    display: block;
+  }
+}
+
+.headerTop__LanguagesDecs {
+  position: absolute;
+  z-index: 3;
+  top: 100%;
+  width: 260px;
+  height: 148px;
+  background-color: #fff;
+  font-size: var(--font-size16);
+  color: var(--text-color-black);
+  border: 2px solid #ddd;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  display: none;
 }
 
 .headerTop__navSeparate {

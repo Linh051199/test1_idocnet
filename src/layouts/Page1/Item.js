@@ -7,16 +7,11 @@ function Item({ title, src, numProduct }) {
   return (
     <div className={cx("item__wrapper")}>
       <div className={cx("item__img")}>
-        <img
-          src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_4_front-494x593.jpg"
-          alt="img"
-          width="100%"
-          height="300px"
-        />
+        <img src={src} alt="img" width="100%" height="300px" />
       </div>
       <div className={cx("item__decs")}>
-        <div className={cx("item__decsTitle")}>clothing</div>
-        <div className={cx("item__decsProduct")}>12 products</div>
+        <div className={cx("item__decsTitle")}>{title}</div>
+        <div className={cx("item__decsProduct")}>{numProduct} products</div>
       </div>
     </div>
   );

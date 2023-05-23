@@ -3,6 +3,7 @@ import classNames from "classnames/bind";
 
 import styles from "./Footer.module.scss";
 import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
 
 const cx = classNames.bind(styles);
 
@@ -28,30 +29,38 @@ function FooterTop() {
                   ></i>
                 </div>
               </Tippy>
-              <div className={cx("footer__aboutIcon", "in_icon")}>
-                <i
-                  class="fa-brands fa-instagram"
-                  style={{ fontSize: "18px" }}
-                ></i>
-              </div>
-              <div className={cx("footer__aboutIcon", "tw_icon")}>
-                <i
-                  class="fa-brands fa-twitter"
-                  style={{ fontSize: "18px" }}
-                ></i>
-              </div>
-              <div className={cx("footer__aboutIcon", "le_icon")}>
-                <i
-                  class="fa-regular fa-envelope"
-                  style={{ fontSize: "18px" }}
-                ></i>
-              </div>
-              <div className={cx("footer__aboutIcon", "pi_icon")}>
-                <i
-                  class="fa-brands fa-pinterest-p"
-                  style={{ fontSize: "18px" }}
-                ></i>
-              </div>
+              <Tippy content="Follow on Instagram">
+                <div className={cx("footer__aboutIcon", "in_icon")}>
+                  <i
+                    class="fa-brands fa-instagram"
+                    style={{ fontSize: "18px" }}
+                  ></i>
+                </div>
+              </Tippy>
+              <Tippy content="Follow on Twitter">
+                <div className={cx("footer__aboutIcon", "tw_icon")}>
+                  <i
+                    class="fa-brands fa-twitter"
+                    style={{ fontSize: "18px" }}
+                  ></i>
+                </div>
+              </Tippy>
+              <Tippy content="Send us a email">
+                <div className={cx("footer__aboutIcon", "le_icon")}>
+                  <i
+                    class="fa-regular fa-envelope"
+                    style={{ fontSize: "18px" }}
+                  ></i>
+                </div>
+              </Tippy>
+              <Tippy content="Follow on Printerest">
+                <div className={cx("footer__aboutIcon", "pi_icon")}>
+                  <i
+                    class="fa-brands fa-pinterest-p"
+                    style={{ fontSize: "18px" }}
+                  ></i>
+                </div>
+              </Tippy>
             </div>
           </div>
         </div>

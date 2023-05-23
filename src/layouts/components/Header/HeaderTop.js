@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from "classnames/bind";
 import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
 
 import styles from "./Header.module.scss";
 
@@ -36,13 +37,17 @@ function HeaderTop() {
             </div>
           </Tippy>
           <span className={cx("headerTop__navSeparate")}></span>
-          <div className={cx("headerTop__navItem")}>
+          <div className={cx("headerTop__navItem", "headerTop__Languages")}>
             Languages
             <div className={cx("headerTop_iconItem")}>
               <i
                 class="fa-solid fa-chevron-down"
                 style={{ paddingLeft: "5px" }}
               ></i>
+            </div>
+            <div className={cx("headerTop__LanguagesDecs")}>
+              You need Polylang or WPML plugin for this to work. You can remove
+              it from Theme Options.
             </div>
           </div>
           <span className={cx("headerTop__navSeparate")}></span>

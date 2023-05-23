@@ -33,7 +33,7 @@ function Page1Sub() {
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/258836-0426_1-100x100.jpeg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/538228-0286_1-100x100.jpeg"
                   alt="img"
                   width="60px"
                   height="60px"
@@ -41,10 +41,10 @@ function Page1Sub() {
               </div>
               <div className={cx("page1Body__sideBarRecentItemDesc")}>
                 <div className={cx("page1Body__sideBarRecentItemName")}>
-                  Beyond Top NLY Trend
+                  Osaka Entry Tee Superdry 12
                 </div>
                 <div className={cx("page1Body__sideBarRecentItemPrice")}>
-                  $9,90
+                  $29,00
                 </div>
               </div>
             </div>
@@ -52,7 +52,7 @@ function Page1Sub() {
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/258836-0426_1-100x100.jpeg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/282004-0286_2-100x100.jpeg"
                   alt="img"
                   width="60px"
                   height="60px"
@@ -60,10 +60,10 @@ function Page1Sub() {
               </div>
               <div className={cx("page1Body__sideBarRecentItemDesc")}>
                 <div className={cx("page1Body__sideBarRecentItemName")}>
-                  Beyond Top NLY Trend
+                  All Star Canvas Hi Converse
                 </div>
                 <div className={cx("page1Body__sideBarRecentItemPrice")}>
-                  $9,90
+                  $29,00
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@ function Page1Sub() {
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/258836-0426_1-100x100.jpeg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/252678-0029_1-100x100.jpeg"
                   alt="img"
                   width="60px"
                   height="60px"
@@ -79,10 +79,10 @@ function Page1Sub() {
               </div>
               <div className={cx("page1Body__sideBarRecentItemDesc")}>
                 <div className={cx("page1Body__sideBarRecentItemName")}>
-                  Beyond Top NLY Trend
+                  Fluro Big Pullover Designers Remix
                 </div>
                 <div className={cx("page1Body__sideBarRecentItemPrice")}>
-                  $9,90
+                  $49,00
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@ function Page1Sub() {
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/258836-0426_1-100x100.jpeg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/216756-0014_1-100x100.jpeg"
                   alt="img"
                   width="60px"
                   height="60px"
@@ -103,10 +103,10 @@ function Page1Sub() {
               </div>
               <div className={cx("page1Body__sideBarRecentItemDesc")}>
                 <div className={cx("page1Body__sideBarRecentItemName")}>
-                  Beyond Top NLY Trend
+                  Daisy Bag Sonia by Sonia Rykiel
                 </div>
                 <div className={cx("page1Body__sideBarRecentItemPrice")}>
-                  $9,90
+                  $2.999,00
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ function Page1Sub() {
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/258836-0426_1-100x100.jpeg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/T_7_front-100x100.jpg"
                   alt="img"
                   width="60px"
                   height="60px"
@@ -141,10 +141,10 @@ function Page1Sub() {
               </div>
               <div className={cx("page1Body__sideBarRecentItemDesc")}>
                 <div className={cx("page1Body__sideBarRecentItemName")}>
-                  Beyond Top NLY Trend
+                  Happy Ninja
                 </div>
                 <div className={cx("page1Body__sideBarRecentItemPrice")}>
-                  $9,90
+                  $18,00
                 </div>
               </div>
             </div>
@@ -152,7 +152,7 @@ function Page1Sub() {
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/258836-0426_1-100x100.jpeg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/917542-0001_1-100x100.jpeg"
                   alt="img"
                   width="60px"
                   height="60px"
@@ -176,7 +176,7 @@ function Page1Sub() {
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/258836-0426_1-100x100.jpeg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/538228-0286_1-100x100.jpeg"
                   alt="img"
                   width="60px"
                   height="60px"
@@ -184,10 +184,10 @@ function Page1Sub() {
               </div>
               <div className={cx("page1Body__sideBarRecentItemDesc")}>
                 <div className={cx("page1Body__sideBarRecentItemName")}>
-                  Beyond Top NLY Trend
+                  Osaka Entry Tee Superdry 12
                 </div>
                 <div className={cx("page1Body__sideBarRecentItemPrice")}>
-                  $9,90
+                  $29,00
                 </div>
               </div>
             </div>
@@ -195,7 +195,7 @@ function Page1Sub() {
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/258836-0426_1-100x100.jpeg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/282004-0286_2-100x100.jpeg"
                   alt="img"
                   width="60px"
                   height="60px"
@@ -203,10 +203,10 @@ function Page1Sub() {
               </div>
               <div className={cx("page1Body__sideBarRecentItemDesc")}>
                 <div className={cx("page1Body__sideBarRecentItemName")}>
-                  Beyond Top NLY Trend
+                  All Star Canvas Hi Converse
                 </div>
                 <div className={cx("page1Body__sideBarRecentItemPrice")}>
-                  $9,90
+                  $29,00
                 </div>
               </div>
             </div>
@@ -214,7 +214,7 @@ function Page1Sub() {
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/258836-0426_1-100x100.jpeg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/252678-0029_1-100x100.jpeg"
                   alt="img"
                   width="60px"
                   height="60px"
@@ -222,10 +222,10 @@ function Page1Sub() {
               </div>
               <div className={cx("page1Body__sideBarRecentItemDesc")}>
                 <div className={cx("page1Body__sideBarRecentItemName")}>
-                  Beyond Top NLY Trend
+                  Varanise CN Tee Hilfiger Denim
                 </div>
                 <div className={cx("page1Body__sideBarRecentItemPrice")}>
-                  $9,90
+                  $15,00
                 </div>
               </div>
             </div>
@@ -233,7 +233,7 @@ function Page1Sub() {
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/258836-0426_1-100x100.jpeg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/538228-0286_1-100x100.jpeg"
                   alt="img"
                   width="60px"
                   height="60px"
@@ -241,10 +241,14 @@ function Page1Sub() {
               </div>
               <div className={cx("page1Body__sideBarRecentItemDesc")}>
                 <div className={cx("page1Body__sideBarRecentItemName")}>
-                  Beyond Top NLY Trend
+                  Osaka Entry Tee Superdry 12
                 </div>
                 <div className={cx("page1Body__sideBarRecentItemPrice")}>
-                  $9,90
+                  <span className={cx("page1Body__sideBarRecentItemPriceHide")}>
+                    {" "}
+                    $19,00{" "}
+                  </span>{" "}
+                  $29,00
                 </div>
               </div>
             </div>
@@ -259,7 +263,7 @@ function Page1Sub() {
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/258836-0426_1-100x100.jpeg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/cd_6_angle-100x100.jpg"
                   alt="img"
                   width="60px"
                   height="60px"
@@ -267,10 +271,14 @@ function Page1Sub() {
               </div>
               <div className={cx("page1Body__sideBarRecentItemDesc")}>
                 <div className={cx("page1Body__sideBarRecentItemName")}>
-                  Beyond Top NLY Trend
+                  Woo Single #2
                 </div>
                 <div className={cx("page1Body__sideBarRecentItemPrice")}>
-                  $9,90
+                  <span className={cx("page1Body__sideBarRecentItemPriceHide")}>
+                    {" "}
+                    $3,00{" "}
+                  </span>
+                  $2,00
                 </div>
               </div>
             </div>
@@ -278,7 +286,7 @@ function Page1Sub() {
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/258836-0426_1-100x100.jpeg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/634054-5337_1-100x100.jpeg"
                   alt="img"
                   width="60px"
                   height="60px"
@@ -286,10 +294,10 @@ function Page1Sub() {
               </div>
               <div className={cx("page1Body__sideBarRecentItemDesc")}>
                 <div className={cx("page1Body__sideBarRecentItemName")}>
-                  Beyond Top NLY Trend
+                  Lawrance Polo Tee Jack & Jones
                 </div>
                 <div className={cx("page1Body__sideBarRecentItemPrice")}>
-                  $9,90
+                  $39,00
                 </div>
               </div>
             </div>
@@ -297,7 +305,7 @@ function Page1Sub() {
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/258836-0426_1-100x100.jpeg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/120390-0054_1-100x100.jpeg"
                   alt="img"
                   width="60px"
                   height="60px"
@@ -305,10 +313,10 @@ function Page1Sub() {
               </div>
               <div className={cx("page1Body__sideBarRecentItemDesc")}>
                 <div className={cx("page1Body__sideBarRecentItemName")}>
-                  Beyond Top NLY Trend
+                  Classic Bag, Svea
                 </div>
                 <div className={cx("page1Body__sideBarRecentItemPrice")}>
-                  $9,90
+                  $29,00
                 </div>
               </div>
             </div>
