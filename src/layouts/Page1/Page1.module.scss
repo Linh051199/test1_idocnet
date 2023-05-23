@@ -1,0 +1,247 @@
+.page1Body__wrapper {
+  display: flex;
+}
+
+.page1Body__sideBar {
+  flex: 2;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page1Body__sideBarHeader {
+  font-size: var(--font-size18);
+  color: var(--text-color-black);
+}
+
+.page1Body__sideBarSeparateTitle {
+  background-color: #e5e5e5;
+  height: 3px;
+  display: block;
+  width: 100%;
+  max-width: 30px;
+  margin: 10px 0 30px;
+}
+.page1Body__sideBarSeparateItem {
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+  margin: 10px 0;
+}
+
+.page1Body__sideBarTitle {
+  font-size: var(--font-size16);
+  font-weight: var(--font-weight-bold);
+  color: #777777;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+.page1Body__sideBarBrowse {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.page1Body__sideBarBrowseList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page1Body__sideBarBrowseItem {
+  font-size: var(--font-size16);
+  color: #324762;
+}
+
+.page1Body__sideBarFilterColor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.page1Body__sideBarColorList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page1Body__sideBarColorItem {
+  font-size: var(--font-size16);
+  color: #324762;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.page1Body__sideBarColorItemNumber {
+  font-size: var(--font-size12);
+  color: #c6c3c3;
+}
+
+.page1Body__sideBarFilterPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.page1Body__sideBarFilterPriceInput {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.page1Body__sideBarFilterPriceBtn {
+  font-size: var(--font-size14);
+  color: var(--text-color-white);
+  background-color: #666666;
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.page1Body__sideBarRecently {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.page1Body__sideBarRecentlList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.page1Body__sideBarRecentItem {
+  font-size: var(--font-size16);
+  color: #324762;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.page1Body__sideBarRecentItemDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.page1Body__sideBarRecentItemImg {
+  margin-right: 10px;
+}
+
+.page1Body__sideBarRecentItemName {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.page1Body__sideBarRecentItemPrice {
+  font-weight: var(--font-weight-bold);
+}
+
+.page1Body__content {
+  margin-top: 30px;
+
+  flex: 8;
+}
+
+.page1Body__contentList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  // margin-right: 30px;
+}
+
+.page1Body__contentItem {
+  width: 30%;
+  margin-left: 20px;
+}
+
+.item__wrapper {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+
+  &:hover .item__decs,
+  &:hover .item__decsProduct {
+    background-color: #2f425b;
+    color: var(--text-color-white);
+  }
+}
+
+.item__img {
+}
+
+.item__decs {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  height: 60px;
+}
+
+.item__decsTitle {
+  font-size: var(--font-size14);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.item__decsProduct {
+  font-size: var(--font-size10);
+  text-transform: uppercase;
+  color: #3c3bf1;
+}
+
+.page1Sub__wrapper {
+  border-top: 1px solid #ececec;
+}
+
+.page1Sub__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page1Sub__latest {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.page1Sub__bestSelling {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page1Sub__featured {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page1Sub__rate {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
