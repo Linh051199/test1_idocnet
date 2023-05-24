@@ -85,6 +85,11 @@
   margin-right: 5px;
   margin-bottom: 5px;
   border-radius: 3px;
+  &:hover {
+    cursor: pointer;
+    background-color: black;
+    color: var(--text-color-white);
+  }
 }
 
 .footer__signUp {
@@ -142,6 +147,10 @@
   border: none;
   outline: none;
   background-color: #446084;
+  &:hover {
+    background-color: #263448;
+    cursor: pointer;
+  }
 }
 
 .footer__bodyTitle {

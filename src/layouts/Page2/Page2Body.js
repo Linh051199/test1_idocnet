@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import classNames from "classnames/bind";
 
 import styles from "./Page2.module.scss";
@@ -7,6 +7,11 @@ import Item from "./Item";
 const cx = classNames.bind(styles);
 
 function Page2Body() {
+  const [showClothing, sewShowClothing] = useState(false);
+
+  const handleOnClickShowClothing = () => {
+    sewShowClothing(!showClothing);
+  };
   return (
     <div className={cx("page2Body__wrapper", "grid", "wide")}>
       <div className={cx("page2Body__sideBar")}>
@@ -25,10 +30,22 @@ function Page2Body() {
 
             <div className={cx("page2Body__sideBarBrowseItem")}>
               <p>Clothing</p>
-              <div className={cx("page2Body__sideBarBrowseItemIcon")}>
-                <i class="fa-solid fa-chevron-down"></i>
-              </div>
+              {showClothing ? (
+                <div onClick={handleOnClickShowClothing}>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </div>
+              ) : (
+                <div onClick={handleOnClickShowClothing}>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              )}
             </div>
+            {showClothing && (
+              <div className={cx("page2Body__sideBarBrowseItemSub")}>
+                Hoodies
+              </div>
+            )}
+
             <div className={cx("page2Body__sideBarSeparateItem")}></div>
 
             <div className={cx("page2Body__sideBarBrowseItem")}>Men</div>
@@ -83,6 +100,19 @@ function Page2Body() {
         </div>
       </div>
       <div className={cx("page2Body__content")}>
+        <div className={cx("page2Body__sorting")}>
+          <div className={cx("page2Body__sortingShow")}>
+            Showing all 12 results
+          </div>
+          <select className={cx("page2Body__sortingSelect")}>
+            <option>Default sorting</option>
+            <option>Short by popularity</option>
+            <option>Short by average rating</option>
+            <option>Short by latest</option>
+            <option>Short by price:low to high</option>
+            <option>Short by price:high to low</option>
+          </select>
+        </div>
         <div className={cx("page2Body__list")}>
           <div className={cx("page2Body__item")}>
             <Item
