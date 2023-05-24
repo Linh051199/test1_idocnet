@@ -57,14 +57,27 @@
   width: 100%;
   font-size: var(--font-size16);
   color: #324762;
-  // &:active .page2Body__sideBarBrowseItemIcon {
+  // &:active .page2Body__sideBarBrowseItemBtn {
   //   transform: rotate(180deg);
+  //   transition: transform linear 0.2s;
   // }
+  // &:active .page2Body__sideBarBrowseItemSub {
+  //   transform: rotate(180deg);
+  //   transition: transform linear 0.2s;
+  // }
+}
+.active {
+  transform: rotate(180deg);
+  transition: transform linear 0.2s;
+}
+.noActive {
+  transform: rotate(360deg);
+  transition: transform linear 0.2s;
 }
 
 .page2Body__sideBarBrowseItemSub {
   font-size: var(--font-size14);
-  margin: 5px 0 5px 20px;
+  margin: 0 0 0 20px;
   padding: 5px;
   border-left: 1px solid #ececec;
 }

@@ -9,8 +9,69 @@
   justify-content: space-between;
 }
 
+.item__heart {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  padding: 8px;
+  color: #858585;
+  border: 2px solid #858585;
+  border-radius: 50%;
+  display: none;
+  &:hover {
+    background-color: #7b0000;
+    color: var(--text-color-white);
+    cursor: pointer;
+  }
+}
+
 .page3Body__carousel {
+  position: relative;
   margin-top: 40px;
+  width: 480px;
+  height: 510px;
+  &:hover .carouselBtn {
+    display: block;
+  }
+  &:hover .item__heart {
+    display: block;
+  }
+}
+
+.carouselBtn {
+  display: none;
+}
+
+.prev {
+  position: absolute;
+  animation: prevBtnShow linear 0.2s;
+}
+@keyframes prevBtnShow {
+  from {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.next {
+  position: absolute;
+  animation: nextBtn linear 0.2s;
+}
+@keyframes nextBtn {
+  from {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .page3Body__info {
@@ -53,7 +114,7 @@
 .page3Body__infoDesc {
   font-size: var(--font-size16);
   text-align: left;
-  max-width: 70%;
+  // max-width: 70%;
   color: #777777;
   line-height: 2.5rem;
 }
@@ -74,6 +135,10 @@
   padding: 10px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
+  &:hover {
+    cursor: pointer;
+    background-color: #858585;
+  }
 }
 
 .contactNumber {
@@ -170,7 +235,7 @@
 }
 
 .page3Body__sideBar {
-  width: 30%;
+  // width: 30%;
   margin-top: 40px;
 }
 

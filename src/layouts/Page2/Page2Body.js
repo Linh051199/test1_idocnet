@@ -7,11 +7,22 @@ import Item from "./Item";
 const cx = classNames.bind(styles);
 
 function Page2Body() {
-  const [showClothing, sewShowClothing] = useState(false);
+  const [showClothing, sewShowClothing] = useState(true);
+  const [showMen, sewShowMen] = useState(false);
+  const [showMusic, sewShowMusic] = useState(false);
 
-  const handleOnClickShowClothing = () => {
+  const handleShowClothing = () => {
     sewShowClothing(!showClothing);
   };
+
+  const handleShowMen = () => {
+    sewShowMen(!showMen);
+  };
+
+  const handleShowMusic = () => {
+    sewShowMusic(!showMusic);
+  };
+
   return (
     <div className={cx("page2Body__wrapper", "grid", "wide")}>
       <div className={cx("page2Body__sideBar")}>
@@ -29,29 +40,81 @@ function Page2Body() {
             <div className={cx("page2Body__sideBarSeparateItem")}></div>
 
             <div className={cx("page2Body__sideBarBrowseItem")}>
-              <p>Clothing</p>
-              {showClothing ? (
-                <div onClick={handleOnClickShowClothing}>
-                  <i class="fa-solid fa-chevron-up"></i>
+              <div>Clothing</div>
+              <div
+                className={
+                  showClothing
+                    ? cx("page2Body__sideBarBrowseItemBtn", "active")
+                    : cx("page2Body__sideBarBrowseItemBtn", "noActive")
+                }
+              >
+                <div onClick={handleShowClothing}>
+                  <i
+                    class="fa-solid fa-chevron-down"
+                    style={{ cursor: "pointer", fontSize: "12px" }}
+                  ></i>
                 </div>
-              ) : (
-                <div onClick={handleOnClickShowClothing}>
-                  <i class="fa-solid fa-chevron-down"></i>
-                </div>
-              )}
+              </div>
             </div>
             {showClothing && (
               <div className={cx("page2Body__sideBarBrowseItemSub")}>
                 Hoodies
               </div>
             )}
+            <div className={cx("page2Body__sideBarSeparateItem")}></div>
+
+            <div className={cx("page2Body__sideBarBrowseItem")}>
+              <div>Men</div>
+              <div
+                className={
+                  showMen
+                    ? cx("page2Body__sideBarBrowseItemBtn", "active")
+                    : cx("page2Body__sideBarBrowseItemBtn", "noActive")
+                }
+              >
+                <div onClick={handleShowMen}>
+                  <i
+                    class="fa-solid fa-chevron-down"
+                    style={{ cursor: "pointer", fontSize: "12px" }}
+                  ></i>
+                </div>
+              </div>
+            </div>
+            {showMen && (
+              <div className={cx("page2Body__sideBarBrowseItemSub")}>
+                T-Shirts
+              </div>
+            )}
 
             <div className={cx("page2Body__sideBarSeparateItem")}></div>
 
-            <div className={cx("page2Body__sideBarBrowseItem")}>Men</div>
-            <div className={cx("page2Body__sideBarSeparateItem")}></div>
-
-            <div className={cx("page2Body__sideBarBrowseItem")}>Music</div>
+            <div className={cx("page2Body__sideBarBrowseItem")}>
+              <div>Music</div>
+              <div
+                className={
+                  showMusic
+                    ? cx("page2Body__sideBarBrowseItemBtn", "active")
+                    : cx("page2Body__sideBarBrowseItemBtn", "noActive")
+                }
+              >
+                <div onClick={handleShowMusic}>
+                  <i
+                    class="fa-solid fa-chevron-down"
+                    style={{ cursor: "pointer", fontSize: "12px" }}
+                  ></i>
+                </div>
+              </div>
+            </div>
+            {showMusic && (
+              <>
+                <div className={cx("page2Body__sideBarBrowseItemSub")}>
+                  Albums
+                </div>
+                <div className={cx("page2Body__sideBarBrowseItemSub")}>
+                  Singles
+                </div>
+              </>
+            )}
             <div className={cx("page2Body__sideBarSeparateItem")}></div>
 
             <div className={cx("page2Body__sideBarBrowseItem")}>Posters</div>

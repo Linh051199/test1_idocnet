@@ -10,17 +10,76 @@ const cx = classNames.bind(styles);
 
 function Page3Body() {
   const [showDesc, setShowDesc] = useState("1");
+  const [numberItem, setNumberItem] = useState(0);
+
+  const handleClickSubtract = () => {
+    setNumberItem(numberItem - 1);
+  };
+  const handleClickAdd = () => {
+    setNumberItem(numberItem + 1);
+  };
+
   return (
     <div className={cx("page3Body__wrapper", "grid", "wide")}>
       <div className={cx("page3Body__top")}>
         <div className={cx("page3Body__carousel")}>
-          <img
-            src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_3_back-494x593.jpg"
-            alt="img"
-            width="480px"
-            height="510px"
-          />
+          <div className={cx("item__heart")}>
+            <i class="fa-solid fa-heart" style={{ fontSize: "18px" }}></i>
+          </div>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_4_front-510x510.jpg"
+                  class="d-block w-100"
+                  alt="img"
+                  width="480px"
+                  height="510px"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_3_back-510x510.jpg"
+                  class="d-block w-100"
+                  alt="img"
+                  width="480px"
+                  height="510px"
+                />
+              </div>
+            </div>
+            <button
+              className={cx("carousel-control-prev", "prev")}
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <div className={cx("carouselBtn", "prev")}>
+                <i
+                  class="fa-solid fa-chevron-left"
+                  style={{ fontSize: "22px", color: "black" }}
+                ></i>
+              </div>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <div className={cx("carouselBtn", "next")}>
+                <i
+                  class="fa-solid fa-chevron-right"
+                  style={{ fontSize: "22px", color: "black" }}
+                ></i>
+              </div>
+            </button>
+          </div>
         </div>
+
         <div className={cx("page3Body__info")}>
           <div className={cx("page3Body__infoTitle")}>
             HOME / SHOP / CLOTHING / HOODIES
@@ -29,17 +88,26 @@ function Page3Body() {
           <div className={cx("page3Body__infoSeparateName")}></div>
           <div className={cx("page3Body__infoPrice")}>$35,00</div>
           <div className={cx("page3Body__infoDesc")}>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-            egestas semper. Aenean ultricies mi vitae est. Mauris placerat
-            eleifend leo.
+            Pellentesque habitant morbi tristique
+            <br /> senectus et netus et malesuada
+            <br />
+            fames ac turpis egestas.
+            <br /> Vestibulum tortor quam,
+            <br /> feugiat vitae, ultricies eget,
+            <br /> tempor sit amet, ante.
+            <br /> Donec eu libero sit amet quam egestas semper.
+            <br /> Aenean ultricies mi vitae est.
+            <br /> Mauris placerat eleifend leo.
           </div>
           <div className={cx("page3Body__infoContact")}>
             <div className={cx("page3Body__infoContactNumber")}>
-              <span className={cx("contactBtn")}>-</span>
-              <span className={cx("contactNumber")}>0</span>
-              <span className={cx("contactBtn")}>+</span>
+              <span className={cx("contactBtn")} onClick={handleClickSubtract}>
+                -
+              </span>
+              <span className={cx("contactNumber")}>{numberItem}</span>
+              <span className={cx("contactBtn")} onClick={handleClickAdd}>
+                +
+              </span>
             </div>
             <button className={cx("page3Body__infoContactBtn")}>
               ADD TO CART{" "}
