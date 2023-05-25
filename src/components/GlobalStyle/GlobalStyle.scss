@@ -56,13 +56,32 @@ a {
 
 ul li {
   list-style-type: none;
+  margin-bottom: 0;
 }
 
 .grid {
   width: 100%;
-  padding: 0;
+  padding: 0 20px;
 }
 .grid.wide {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* PC with low resolution */
+// @media (min-width: 1024px) and (max-width: 1239px) {
+//   .wide {
+//     width: 984px;
+//   }
+// }
+
+/* Tablet - PC with low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+  // .wide {
+  //   width: 644px;
+  // }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
 }

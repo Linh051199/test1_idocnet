@@ -9,7 +9,10 @@ function HeaderFixed() {
   return (
     <div className={cx("headerFixed__wrapper", "grid")}>
       <div className={cx("headerFixed__body", "grid", "wide")}>
-        <div>
+        <label htmlFor="showNav" className={cx("headerBottom__btnNavMedia")}>
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <div className={cx("headerBottom__logo")}>
           <img className={cx("logo")} src={images.logo} alt="img" />
         </div>
         <ul className={cx("headerBottom__navBar")}>
@@ -408,7 +411,9 @@ function HeaderFixed() {
           <div className={cx("headerBottom__contactLogin")}>LOGIN</div>
           <div className={cx("headerBottom__contactSeparate")}></div>
           <div className={cx("headerBottom__contactCart")}>
-            CART / $0,00
+            <div className={cx("headerBottom__contactCartTitle")}>
+              CART / $0,00
+            </div>
             <div className={cx("headerBottom__contactCartIcon")}>
               0
               <strong />

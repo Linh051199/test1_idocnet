@@ -1,6 +1,6 @@
 .footerTop__wrapper {
   background-color: #777777;
-  height: 384px;
+  // height: 384px;
 }
 .footerTop__body {
   display: flex;
@@ -12,7 +12,7 @@
 .footer__about {
   display: flex;
   flex: 1;
-
+  width: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -26,16 +26,18 @@
 .footer__latestNews {
   display: flex;
   flex: 1;
-
+  width: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-bottom: 30px;
 }
 
 .footer__latestNewBody {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
 
 .footer__latestNewItem {
@@ -142,6 +144,7 @@
   color: var(--text-color-white);
   font-weight: var(--font-weight-bold);
   margin-top: 20px;
+  margin-bottom: 30px;
   padding: 10px 15px;
   border-radius: 20px;
   border: none;
@@ -212,7 +215,7 @@
 
 .footerBottom__wrapper {
   background-color: #5b5b5b;
-  height: 80px;
+  // height: 80px;
 }
 
 .footerBottom__Body {
@@ -255,6 +258,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 .footerBottom__PayIcon {
@@ -269,5 +273,19 @@
   &:hover {
     fill: #fff;
     cursor: pointer;
+  }
+}
+
+/* Tablet - PC with low resolution */
+@media (max-width: 1023px) {
+  .footerTop__body {
+    flex-direction: column;
+  }
+  .footerBottom__Body {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footerBottom__authorLink {
+    margin-bottom: 20px;
   }
 }

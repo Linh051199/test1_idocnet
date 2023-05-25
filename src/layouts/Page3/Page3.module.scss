@@ -11,7 +11,7 @@
 
 .item__heart {
   position: absolute;
-  z-index: 99;
+  z-index: 98;
   top: 0;
   right: 0;
   margin: 10px;
@@ -314,7 +314,7 @@
 
 .page3Rev__desc {
   width: 100%;
-  height: 138px;
+  height: auto;
   border: 2px solid #446084;
   text-align: left;
   font-size: var(--font-size20);
@@ -328,4 +328,22 @@
   font-size: var(--font-size16);
   color: #777777;
   margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* Tablet - PC with low resolution */
+@media (max-width: 1023px) {
+  .page3Body__top {
+    flex-direction: column;
+  }
+  .page3Body__carousel {
+    width: 100%;
+    height: auto;
+  }
+  .page3Body__info {
+    margin-left: 0;
+  }
+  .page3Rev__desc {
+    padding-left: 0;
+  }
 }

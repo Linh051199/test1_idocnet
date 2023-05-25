@@ -6,7 +6,7 @@ import styles from "./Page3.module.scss";
 const cx = classNames.bind(styles);
 function Page3Desc() {
   return (
-    <div className={cx("page3Desc__wrapper", "grid", "wide")}>
+    <div className={cx("page3Desc__wrapper")}>
       <div className={cx("page3Desc__title")}>
         Pellentesque habitant morbi tristique senectus et netus et malesuada
         fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,

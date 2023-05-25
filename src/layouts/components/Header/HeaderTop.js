@@ -9,7 +9,7 @@ const cx = classNames.bind(styles);
 
 function HeaderTop() {
   return (
-    <div className={cx("headerTop__wrapper", "grid")}>
+    <div className={cx("headerTop__wrapper")}>
       <div className={cx("headerTop__body", "grid", "wide")}>
         <div className={cx("headerTop__title")}>
           ADD ANYTHING HERE OR JUST REMOVE IT....

@@ -10,7 +10,7 @@ function Page1Sub() {
         <div className={cx("page1Sub__latest")}>
           <div className={cx("page1Body__sideBarTitle")}>latest</div>
           <div className={cx("page1Body__sideBarSeparateTitle")}></div>
-          <div>
+          <div className={cx("page1Body__sideBarRecentItemBody")}>
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img

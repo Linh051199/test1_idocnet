@@ -5,6 +5,8 @@ import styles from "./Page3.module.scss";
 import Tippy from "@tippyjs/react";
 import Page3Desc from "./Page3Desc";
 import Page3Rev from "./Page3Rev";
+import Item from "../Page2/Item";
+import Carousel from "./Carousel";
 
 const cx = classNames.bind(styles);
 
@@ -34,20 +36,20 @@ function Page3Body() {
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_4_front-510x510.jpg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_2_front.jpg"
                   class="d-block w-100"
                   alt="img"
-                  width="480px"
-                  height="510px"
+                  // width="100%"
+                  // height="auto"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_3_back-510x510.jpg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_2_back.jpg"
                   class="d-block w-100"
                   alt="img"
-                  width="480px"
-                  height="510px"
+                  // width="100%"
+                  // height="auto"
                 />
               </div>
             </div>
@@ -181,6 +183,7 @@ function Page3Body() {
         </div>
         {showDesc === "1" && <Page3Desc />}
         {showDesc === "2" && <Page3Rev />}
+        {/* <Carousel /> */}
       </div>
     </div>
   );

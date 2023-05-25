@@ -10,7 +10,7 @@ import Page3Desc from "./Page3Desc";
 import Page3Rev from "./Page3Rev";
 import HeaderFixed from "../components/Header/HeaderFixed";
 import SideBarAd from "../components/SideBarAd";
-
+import Carousel from "./Carousel";
 const cx = classNames.bind(styles);
 
 function Page3() {
@@ -36,7 +36,7 @@ function Page3() {
       <SideBarAd />
       <Header />
       <Page3Body />
-
+      <Carousel />
       <Page1Sub />
       <Footer />
     </div>

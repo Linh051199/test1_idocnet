@@ -15,10 +15,8 @@ function FooterTop() {
           <div className={cx("footer__bodyTitle")}>About US</div>
           <div className={cx("footer__bodySeparate")}></div>
           <div className={cx("footer__aboutBody")}>
-            Lorem ipsum dolor sit amet,
-            <br /> consectetuer adipiscing elit,
-            <br /> sed diam nonummy nibh euismod
-            <br /> tincidunt ut laoreet dolore <br /> magna aliquam erat
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             volutpat.
             <div className={cx("footer__aboutListIcon")}>
               <Tippy content="Follow on Facebook">

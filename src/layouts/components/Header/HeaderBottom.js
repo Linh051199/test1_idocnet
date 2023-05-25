@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import classNames from "classnames/bind";
 
 import styles from "./Header.module.scss";
 import images from "../../../assets/images";
+import Tippy from "@tippyjs/react";
 
 const cx = classNames.bind(styles);
 function HeaderBottom() {
+  const [showMediaNavDemos, setShowMediaNavDemos] = useState(false);
+
+  const handleShowDemos = () => {
+    setShowMediaNavDemos(!showMediaNavDemos);
+  };
   return (
     <div className={cx("headerBottom__wrapper", "grid", "wide")}>
-      <div>
+      <label htmlFor="showNav" className={cx("headerBottom__btnNavMedia")}>
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <div className={cx("headerBottom__logo")}>
         <img className={cx("logo")} src={images.logo} alt="img" />
       </div>
       <ul className={cx("headerBottom__navBar")}>
@@ -408,11 +417,195 @@ function HeaderBottom() {
         <li className={cx("headerBottom__navItem")}>BLOG</li>
         <li className={cx("headerBottom__navItem")}>ELEMENTS</li>
       </ul>
+      <div>
+        <input
+          className={cx("input__media")}
+          type="checkbox"
+          id="showNav"
+          hidden
+        />
+        <div className={cx("headerBottom__navBarMedia")}>
+          <div className={cx("headerBottom__navBarMediaSearch")}>
+            <input
+              className={cx("headerBottom__navBarMediaSearchInput")}
+              type="text"
+              placeholder="Search..."
+            />
+            <button className={cx("headerBottom__navBarMediaSearchBtn")}>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div className={cx("headerBottom__navBarMediaItemSeparate")}></div>
+
+          <div
+            htmlFor="showNav"
+            className={cx("headerBottom__navBarMediaItem")}
+            onClick={() => setShowMediaNavDemos(!showMediaNavDemos)}
+          >
+            <div className={cx("headerBottom__navBarMediaItemHeader")}>
+              <span> DEMOS </span>
+              <div
+                className={showMediaNavDemos ? cx("active") : cx("noActive")}
+              >
+                <div onClick={handleShowDemos}>
+                  <i
+                    class="fa-solid fa-chevron-down"
+                    style={{ cursor: "pointer", fontSize: "16px" }}
+                  ></i>
+                </div>
+              </div>
+            </div>
+            {showMediaNavDemos && (
+              <ul className={cx("headerBottom__navBarMediaItemList")}>
+                <li
+                  className={cx("headerBottom__navBarMediaItemListItemTitle")}
+                >
+                  SHOP DEMOS
+                  <ul>
+                    <li>Classic Shop</li>
+                    <li>Simple Slider</li>
+                    <li>Fullscreen Fashion</li>
+                    <li>Video Cover</li>
+                    <li>Slider Cover</li>
+                    <li>Grid Style 1</li>
+                    <li>Grid Style 2</li>
+                    <li>Grid Style 3</li>
+                  </ul>
+                </li>
+                <li
+                  className={cx("headerBottom__navBarMediaItemListItemTitle")}
+                >
+                  MORE SHOP DEMOS
+                  <ul>
+                    <li>Mega Shop</li>
+                    <li>Cute Shop</li>
+                    <li>Sport Shop</li>
+                    <li>Vendor Shop</li>
+                    <li>Parallax Shop</li>
+                    <li>Big Sale</li>
+                    <li>Sale Countdown</li>
+                  </ul>
+                </li>
+                <li
+                  className={cx("headerBottom__navBarMediaItemListItemTitle")}
+                >
+                  BUSINESS DEMOS
+                  <ul>
+                    <li>Agency</li>
+                    <li>Corporate</li>
+                    <li>Freelancer</li>
+                    <li>Explore</li>
+                    <li>Lifestyle</li>
+                  </ul>
+                </li>
+
+                <li></li>
+                <li></li>
+              </ul>
+            )}
+          </div>
+          <div className={cx("headerBottom__navBarMediaItemSeparate")}></div>
+          <label className={cx("headerBottom__navBarMediaItem")}>
+            <div className={cx("headerBottom__navBarMediaItemHeader")}>
+              <span> FEATURES </span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </label>
+          <div className={cx("headerBottom__navBarMediaItemSeparate")}></div>
+
+          <label className={cx("headerBottom__navBarMediaItem")}>
+            <div className={cx("headerBottom__navBarMediaItemHeader")}>
+              <span> SHOP </span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </label>
+          <div className={cx("headerBottom__navBarMediaItemSeparate")}></div>
+
+          <label className={cx("headerBottom__navBarMediaItem")}>
+            <div className={cx("headerBottom__navBarMediaItemHeader")}>
+              <span> PAGES </span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </label>
+          <div className={cx("headerBottom__navBarMediaItemSeparate")}></div>
+
+          <label className={cx("headerBottom__navBarMediaItem")}>
+            <span>BLOG</span>
+          </label>
+          <div className={cx("headerBottom__navBarMediaItemSeparate")}></div>
+
+          <label className={cx("headerBottom__navBarMediaItem")}>
+            ELEMENTS
+          </label>
+          <div className={cx("headerBottom__navBarMediaItemSeparate")}></div>
+
+          <label className={cx("headerBottom__navBarMediaItem")}>LOGIN</label>
+          <div className={cx("headerBottom__navBarMediaItemSeparate")}></div>
+
+          <label className={cx("headerBottom__navBarMediaItem")}>
+            <div>
+              <i
+                class="fa-regular fa-envelope"
+                style={{ paddingRight: "5px" }}
+              ></i>
+              Newsletter
+            </div>
+          </label>
+          <div className={cx("headerBottom__navBarMediaItemSeparate")}></div>
+
+          <div className={cx("navMedia__icon")}>
+            <Tippy content="Follow on Facebook">
+              <div className={cx("headerTop_iconItem")}>
+                <i
+                  class="fa-brands fa-facebook-f"
+                  style={{ padding: " 0 10px", fontSize: "20px" }}
+                ></i>
+              </div>
+            </Tippy>
+            <Tippy content="Follow on Instagram">
+              <div className={cx("headerTop_iconItem")}>
+                <i
+                  class="fa-brands fa-instagram"
+                  style={{ padding: " 0 10px", fontSize: "20px" }}
+                ></i>
+              </div>
+            </Tippy>
+            <Tippy content="Follow on Twitter">
+              <div className={cx("headerTop_iconItem")}>
+                <i
+                  class="fa-brands fa-twitter"
+                  style={{ padding: " 0 10px", fontSize: "20px" }}
+                ></i>
+              </div>
+            </Tippy>
+            <Tippy content="Send us a email">
+              <div className={cx("headerTop_iconItem")}>
+                <i
+                  class="fa-regular fa-envelope"
+                  style={{ padding: " 0 10px", fontSize: "20px" }}
+                ></i>
+              </div>
+            </Tippy>
+          </div>
+        </div>
+
+        <label htmlFor="showNav" className={cx("overlay")}>
+          <label
+            htmlFor="showNav"
+            className={cx("headerBottom__navBarMediaCloseBtn")}
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+        </label>
+      </div>
+
       <div className={cx("headerBottom__contact")}>
         <div className={cx("headerBottom__contactLogin")}>LOGIN</div>
         <div className={cx("headerBottom__contactSeparate")}></div>
         <div className={cx("headerBottom__contactCart")}>
-          CART / $0,00
+          <div className={cx("headerBottom__contactCartTitle")}>
+            CART / $0,00
+          </div>
           <div className={cx("headerBottom__contactCartIcon")}>
             0
             <strong />

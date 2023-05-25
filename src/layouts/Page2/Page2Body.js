@@ -25,6 +25,21 @@ function Page2Body() {
 
   return (
     <div className={cx("page2Body__wrapper", "grid", "wide")}>
+      <input
+        className={cx("input__media")}
+        type="checkbox"
+        id="input__mediaPage2"
+        hidden
+      />
+      <div className={cx("media__header")}>
+        <div className={cx("media__title")}>
+          HOME / SHOP /<strong> SHOP</strong>
+        </div>
+      </div>
+      <label htmlFor="input__mediaPage2" className={cx("media__filter")}>
+        <i class="fa-solid fa-list"></i> FILTER
+      </label>
+
       <div className={cx("page2Body__sideBar")}>
         <div className={cx("page2Body__sideBarHeader")}>
           HOME / SHOP /<strong> SHOP</strong>
@@ -153,15 +168,224 @@ function Page2Body() {
         <div className={cx("page2Body__sideBarFilterPrice")}>
           <div className={cx("page2Body__sideBarTitle")}>FILTER BY PRICE</div>
           <div className={cx("page2Body__sideBarSeparateTitle")}></div>
-          <input
-            className={cx("page2Body__sideBarFilterPriceInput")}
-            type="range"
-          />
-          <button className={cx("page2Body__sideBarFilterPriceBtn")}>
-            FILTER
-          </button>
+          <div className={cx("page2Body__sideBarPriceRange")}>
+            <div className={cx("page2Body__sideBarPriceRangeInput")}>
+              <div className={cx("page2Body__sideBarPriceRangeProcess")}></div>
+              <input
+                className={cx("page2Body__sideBarPriceRangeInput-min")}
+                type="range"
+                min="0"
+                max="10000"
+                // value="2500"
+              />
+              <input
+                className={cx("page2Body__sideBarFilterPriceInpu-max")}
+                type="range"
+                min="0"
+                max="10000"
+                // value="2500"
+              />
+            </div>
+            <div className={cx("page2Body__sideBarPriceRangeNum")}>
+              <input
+                type="number"
+                min="0"
+                max="10000"
+                value="0"
+                disabled
+                className={cx("page2Body__sideBarPriceRangeNumItem")}
+              />
+              <input
+                type="number"
+                min="0"
+                max="10000"
+                value="10000"
+                disabled
+                className={cx("page2Body__sideBarPriceRangeNumItem")}
+              />
+            </div>
+            <button className={cx("page2Body__sideBarFilterPriceBtn")}>
+              FILTER
+            </button>
+          </div>
         </div>
       </div>
+
+      <div className={cx("sideBar__media")}>
+        <div className={cx("page2Body__sideBarBrowse")}>
+          <div className={cx("page2Body__sideBarTitle")}>BROWSE</div>
+          <div className={cx("page2Body__sideBarSeparateTitle")}></div>
+          <div className={cx("page2Body__sideBarBrowseList")}>
+            <div className={cx("page2Body__sideBarBrowseItem")}>Bag</div>
+            <div className={cx("page2Body__sideBarSeparateItem")}></div>
+
+            <div className={cx("page2Body__sideBarBrowseItem")}>Booking</div>
+            <div className={cx("page2Body__sideBarSeparateItem")}></div>
+
+            <div className={cx("page2Body__sideBarBrowseItem")}>
+              <div>Clothing</div>
+              <div
+                className={
+                  showClothing
+                    ? cx("page2Body__sideBarBrowseItemBtn", "active")
+                    : cx("page2Body__sideBarBrowseItemBtn", "noActive")
+                }
+              >
+                <div onClick={handleShowClothing}>
+                  <i
+                    class="fa-solid fa-chevron-down"
+                    style={{ cursor: "pointer", fontSize: "12px" }}
+                  ></i>
+                </div>
+              </div>
+            </div>
+            {showClothing && (
+              <div className={cx("page2Body__sideBarBrowseItemSub")}>
+                Hoodies
+              </div>
+            )}
+            <div className={cx("page2Body__sideBarSeparateItem")}></div>
+
+            <div className={cx("page2Body__sideBarBrowseItem")}>
+              <div>Men</div>
+              <div
+                className={
+                  showMen
+                    ? cx("page2Body__sideBarBrowseItemBtn", "active")
+                    : cx("page2Body__sideBarBrowseItemBtn", "noActive")
+                }
+              >
+                <div onClick={handleShowMen}>
+                  <i
+                    class="fa-solid fa-chevron-down"
+                    style={{ cursor: "pointer", fontSize: "12px" }}
+                  ></i>
+                </div>
+              </div>
+            </div>
+            {showMen && (
+              <div className={cx("page2Body__sideBarBrowseItemSub")}>
+                T-Shirts
+              </div>
+            )}
+
+            <div className={cx("page2Body__sideBarSeparateItem")}></div>
+
+            <div className={cx("page2Body__sideBarBrowseItem")}>
+              <div>Music</div>
+              <div
+                className={
+                  showMusic
+                    ? cx("page2Body__sideBarBrowseItemBtn", "active")
+                    : cx("page2Body__sideBarBrowseItemBtn", "noActive")
+                }
+              >
+                <div onClick={handleShowMusic}>
+                  <i
+                    class="fa-solid fa-chevron-down"
+                    style={{ cursor: "pointer", fontSize: "12px" }}
+                  ></i>
+                </div>
+              </div>
+            </div>
+            {showMusic && (
+              <>
+                <div className={cx("page2Body__sideBarBrowseItemSub")}>
+                  Albums
+                </div>
+                <div className={cx("page2Body__sideBarBrowseItemSub")}>
+                  Singles
+                </div>
+              </>
+            )}
+            <div className={cx("page2Body__sideBarSeparateItem")}></div>
+
+            <div className={cx("page2Body__sideBarBrowseItem")}>Posters</div>
+            <div className={cx("page2Body__sideBarSeparateItem")}></div>
+
+            <div className={cx("page2Body__sideBarBrowseItem")}>Shoes</div>
+            <div className={cx("page2Body__sideBarSeparateItem")}></div>
+
+            <div className={cx("page2Body__sideBarBrowseItem")}>
+              Uncategorized
+            </div>
+            <div className={cx("page2Body__sideBarSeparateItem")}></div>
+            <div className={cx("page2Body__sideBarBrowseItem")}>Women</div>
+          </div>
+        </div>
+        <div className={cx("page2Body__sideBarFilterColor")}>
+          <div className={cx("page2Body__sideBarTitle")}>FILTER BY</div>
+          <div className={cx("page2Body__sideBarSeparateTitle")}></div>
+          <div className={cx("page2Body__sideBarColorList")}>
+            <div className={cx("page2Body__sideBarColorItem")}>
+              <div>Black</div>
+              <div className={cx("page2Body__sideBarColorItemNumber")}>(3)</div>
+            </div>
+            <div className={cx("page2Body__sideBarSeparateItem")}></div>
+            <div className={cx("page2Body__sideBarColorItem")}>
+              <div>Blue</div>
+              <div className={cx("page2Body__sideBarColorItemNumber")}>(1)</div>
+            </div>
+            <div className={cx("page2Body__sideBarSeparateItem")}></div>
+            <div className={cx("page2Body__sideBarColorItem")}>
+              <div>Green</div>
+              <div className={cx("page2Body__sideBarColorItemNumber")}>(2)</div>
+            </div>
+          </div>
+        </div>
+        <div className={cx("page2Body__sideBarFilterPrice")}>
+          <div className={cx("page2Body__sideBarTitle")}>FILTER BY PRICE</div>
+          <div className={cx("page2Body__sideBarSeparateTitle")}></div>
+          <div className={cx("page2Body__sideBarPriceRange")}>
+            <div className={cx("page2Body__sideBarPriceRangeInput")}>
+              <div className={cx("page2Body__sideBarPriceRangeProcess")}></div>
+              <input
+                className={cx("page2Body__sideBarPriceRangeInput-min")}
+                type="range"
+                min="0"
+                max="10000"
+                // value="2500"
+              />
+              <input
+                className={cx("page2Body__sideBarFilterPriceInpu-max")}
+                type="range"
+                min="0"
+                max="10000"
+                // value="2500"
+              />
+            </div>
+            <div className={cx("page2Body__sideBarPriceRangeNum")}>
+              <input
+                type="number"
+                min="0"
+                max="10000"
+                value="0"
+                disabled
+                className={cx("page2Body__sideBarPriceRangeNumItem")}
+              />
+              <input
+                type="number"
+                min="0"
+                max="10000"
+                value="10000"
+                disabled
+                className={cx("page2Body__sideBarPriceRangeNumItem")}
+              />
+            </div>
+            <button className={cx("page2Body__sideBarFilterPriceBtn")}>
+              FILTER
+            </button>
+          </div>
+        </div>
+      </div>
+      <label htmlFor="input__mediaPage2" className={cx("overlay")}>
+        <label
+          htmlFor="input__mediaPage2"
+          className={cx("headerBottom__navBarMediaCloseBtn")}
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+      </label>
       <div className={cx("page2Body__content")}>
         <div className={cx("page2Body__sorting")}>
           <div className={cx("page2Body__sortingShow")}>

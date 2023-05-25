@@ -7,7 +7,7 @@ function Item({ title, src, numProduct }) {
   return (
     <div className={cx("item__wrapper")}>
       <div className={cx("item__img")}>
-        <img src={src} alt="img" width="100%" height="300px" />
+        <img src={src} alt="img" width="100%" height="auto" />
       </div>
       <div className={cx("item__decs")}>
         <div className={cx("item__decsTitle")}>{title}</div>

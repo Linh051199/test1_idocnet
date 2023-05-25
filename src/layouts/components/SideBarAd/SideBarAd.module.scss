@@ -1,6 +1,6 @@
 .wrapper {
   position: fixed;
-  z-index: 99;
+  z-index: 97;
   top: 50%;
   transform: translateY(-50%);
   right: 0;
@@ -31,4 +31,11 @@
 }
 .sideBarAd__itemHighLight {
   font-size: var(--font-size20);
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .wrapper {
+    display: none;
+  }
 }
