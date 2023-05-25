@@ -14,7 +14,7 @@ function NavBarPage({ navList }) {
     >
       <div className="link">
         <Link
-          to="/test1_idocNet/page1"
+          to="/test1_idocnet/page1"
           style={{
             backgroundColor: "gray",
             color: "white",
@@ -30,7 +30,7 @@ function NavBarPage({ navList }) {
       </div>
       <div className="link">
         <Link
-          to="/test1_idocNet/page2"
+          to="/test1_idocnet/page2"
           style={{
             backgroundColor: "gray",
             color: "white",
@@ -46,7 +46,7 @@ function NavBarPage({ navList }) {
       </div>
       <div className="link">
         <Link
-          to="/test1_idocNet/page3"
+          to="/test1_idocnet/page3"
           style={{
             backgroundColor: "gray",
             color: "white",
