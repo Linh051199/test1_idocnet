@@ -26,6 +26,18 @@ function HeaderBottom() {
             class="fa-solid fa-magnifying-glass"
             style={{ fontSize: "18px" }}
           ></i>
+          <div className={cx("headerBottom__serach")}>
+            <div className={cx("headerBottom__navBarSearch")}>
+              <input
+                className={cx("headerBottom__navBarSearchInput")}
+                type="text"
+                placeholder="Search..."
+              />
+              <button className={cx("headerBottom__navBarSearchBtn")}>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
         </li>
         <li className={cx("headerBottom__navItem")}>
           DEMOS<i class="fa-solid fa-chevron-down"></i>
@@ -607,7 +619,6 @@ function HeaderBottom() {
             CART / $0,00
           </div>
           <div className={cx("headerBottom__contactCartIcon")}>
-            0
             <strong />
           </div>
         </div>

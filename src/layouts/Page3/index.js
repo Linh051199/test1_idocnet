@@ -31,7 +31,7 @@ function Page3() {
     };
   }, []);
   return (
-    <div>
+    <div className="grid ">
       {show && <HeaderFixed />}
       <SideBarAd />
       <Header />

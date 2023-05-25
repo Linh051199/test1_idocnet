@@ -61,7 +61,7 @@ ul li {
 
 .grid {
   width: 100%;
-  padding: 0 20px;
+  padding: 0;
 }
 .grid.wide {
   max-width: 1200px;
@@ -69,19 +69,24 @@ ul li {
 }
 
 /* PC with low resolution */
-// @media (min-width: 1024px) and (max-width: 1239px) {
-//   .wide {
-//     width: 984px;
-//   }
-// }
+@media (min-width: 1024px) and (max-width: 1270px) {
+  .grid.wide {
+    padding: 0 20px;
+  }
+}
 
 /* Tablet - PC with low resolution */
 @media (min-width: 740px) and (max-width: 1023px) {
-  // .wide {
-  //   width: 644px;
-  // }
+  .grid.wide {
+    width: 100%;
+    padding: 0 20px;
+  }
 }
 
 /* Mobile */
 @media (max-width: 739px) {
+  .wide {
+    width: 100%;
+    padding: 0 10px;
+  }
 }

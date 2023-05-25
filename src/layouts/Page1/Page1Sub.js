@@ -91,7 +91,7 @@ function Page1Sub() {
         <div className={cx("page1Sub__bestSelling")}>
           <div className={cx("page1Body__sideBarTitle")}>BEST SELLING</div>
           <div className={cx("page1Body__sideBarSeparateTitle")}></div>
-          <div>
+          <div className={cx("page1Body__sideBarRecentItemBody")}>
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
@@ -172,7 +172,7 @@ function Page1Sub() {
         <div className={cx("page1Sub__featured")}>
           <div className={cx("page1Body__sideBarTitle")}>FEATURED</div>
           <div className={cx("page1Body__sideBarSeparateTitle")}></div>
-          <div>
+          <div className={cx("page1Body__sideBarRecentItemBody")}>
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img
@@ -259,7 +259,7 @@ function Page1Sub() {
             TOP RATED PRODUCTS
           </div>
           <div className={cx("page1Body__sideBarSeparateTitle")}></div>
-          <div>
+          <div className={cx("page1Body__sideBarRecentItemBody")}>
             <div className={cx("page1Body__sideBarRecentItem")}>
               <div className={cx("page1Body__sideBarRecentItemImg")}>
                 <img

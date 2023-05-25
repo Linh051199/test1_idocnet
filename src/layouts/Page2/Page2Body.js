@@ -10,6 +10,7 @@ function Page2Body() {
   const [showClothing, sewShowClothing] = useState(true);
   const [showMen, sewShowMen] = useState(false);
   const [showMusic, sewShowMusic] = useState(false);
+  const [dataRange, setDataRange] = useState(0);
 
   const handleShowClothing = () => {
     sewShowClothing(!showClothing);
@@ -33,7 +34,7 @@ function Page2Body() {
       />
       <div className={cx("media__header")}>
         <div className={cx("media__title")}>
-          HOME / SHOP /<strong> SHOP</strong>
+          HOME / SHOP /<strong> </strong>
         </div>
       </div>
       <label htmlFor="input__mediaPage2" className={cx("media__filter")}>
@@ -169,41 +170,18 @@ function Page2Body() {
           <div className={cx("page2Body__sideBarTitle")}>FILTER BY PRICE</div>
           <div className={cx("page2Body__sideBarSeparateTitle")}></div>
           <div className={cx("page2Body__sideBarPriceRange")}>
-            <div className={cx("page2Body__sideBarPriceRangeInput")}>
-              <div className={cx("page2Body__sideBarPriceRangeProcess")}></div>
+            <div className={cx("page2Body__sideBarPriceRangeBody")}>
               <input
-                className={cx("page2Body__sideBarPriceRangeInput-min")}
                 type="range"
                 min="0"
-                max="10000"
-                // value="2500"
+                max="40"
+                step="10"
+                value={dataRange}
+                onChange={(e) => setDataRange(e.target.value)}
               />
-              <input
-                className={cx("page2Body__sideBarFilterPriceInpu-max")}
-                type="range"
-                min="0"
-                max="10000"
-                // value="2500"
-              />
+              <span>{dataRange}$</span>
             </div>
-            <div className={cx("page2Body__sideBarPriceRangeNum")}>
-              <input
-                type="number"
-                min="0"
-                max="10000"
-                value="0"
-                disabled
-                className={cx("page2Body__sideBarPriceRangeNumItem")}
-              />
-              <input
-                type="number"
-                min="0"
-                max="10000"
-                value="10000"
-                disabled
-                className={cx("page2Body__sideBarPriceRangeNumItem")}
-              />
-            </div>
+
             <button className={cx("page2Body__sideBarFilterPriceBtn")}>
               FILTER
             </button>
@@ -337,44 +315,23 @@ function Page2Body() {
           <div className={cx("page2Body__sideBarTitle")}>FILTER BY PRICE</div>
           <div className={cx("page2Body__sideBarSeparateTitle")}></div>
           <div className={cx("page2Body__sideBarPriceRange")}>
-            <div className={cx("page2Body__sideBarPriceRangeInput")}>
-              <div className={cx("page2Body__sideBarPriceRangeProcess")}></div>
-              <input
-                className={cx("page2Body__sideBarPriceRangeInput-min")}
-                type="range"
-                min="0"
-                max="10000"
-                // value="2500"
-              />
-              <input
-                className={cx("page2Body__sideBarFilterPriceInpu-max")}
-                type="range"
-                min="0"
-                max="10000"
-                // value="2500"
-              />
+            <div className={cx("page2Body__sideBarPriceRange")}>
+              <div className={cx("page2Body__sideBarPriceRangeBody")}>
+                <input
+                  type="range"
+                  min="0"
+                  max="40"
+                  step="10"
+                  value={dataRange}
+                  onChange={(e) => setDataRange(e.target.value)}
+                />
+                <span>{dataRange}$</span>
+              </div>
+
+              <button className={cx("page2Body__sideBarFilterPriceBtn")}>
+                FILTER
+              </button>
             </div>
-            <div className={cx("page2Body__sideBarPriceRangeNum")}>
-              <input
-                type="number"
-                min="0"
-                max="10000"
-                value="0"
-                disabled
-                className={cx("page2Body__sideBarPriceRangeNumItem")}
-              />
-              <input
-                type="number"
-                min="0"
-                max="10000"
-                value="10000"
-                disabled
-                className={cx("page2Body__sideBarPriceRangeNumItem")}
-              />
-            </div>
-            <button className={cx("page2Body__sideBarFilterPriceBtn")}>
-              FILTER
-            </button>
           </div>
         </div>
       </div>

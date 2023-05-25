@@ -415,7 +415,6 @@ function HeaderFixed() {
               CART / $0,00
             </div>
             <div className={cx("headerBottom__contactCartIcon")}>
-              0
               <strong />
             </div>
           </div>

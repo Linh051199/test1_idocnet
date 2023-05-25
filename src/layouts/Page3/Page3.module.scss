@@ -40,6 +40,17 @@
   }
 }
 
+.page3Body__carouselImage {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+
+  img {
+    margin-right: 10px;
+    opacity: 0.8;
+  }
+}
+
 .carouselBtn {
   display: none;
 }
@@ -346,4 +357,19 @@
   .page3Rev__desc {
     padding-left: 0;
   }
+}
+
+.carousel__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.carousel__body {
+  // padding: 0 20px;
+  width: 90%;
+}
+.carousel__list {
+  display: flex;
+}
+.slick-next::before {
+  background-color: black;
 }

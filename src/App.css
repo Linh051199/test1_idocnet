@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+.slick-slide div {
+  margin: 0 5px;
+}
+
+.slick-next:before {
+  color: black;
+}
+
+/* @media (max-width: 1023px) {
+  .slick-slide {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 739px) {
+  .slick-slide {
+    padding: 0 10px;
+  }
+} */

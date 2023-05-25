@@ -15,7 +15,9 @@ function Page3Body() {
   const [numberItem, setNumberItem] = useState(0);
 
   const handleClickSubtract = () => {
-    setNumberItem(numberItem - 1);
+    if (numberItem > 0) {
+      setNumberItem(numberItem - 1);
+    }
   };
   const handleClickAdd = () => {
     setNumberItem(numberItem + 1);
@@ -80,8 +82,19 @@ function Page3Body() {
               </div>
             </button>
           </div>
+          <div className={cx("page3Body__carouselImage")}>
+            <img
+              src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_2_front.jpg"
+              alt="img"
+              width="100px"
+            ></img>
+            <img
+              src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_2_back.jpg"
+              alt="img"
+              width="100px"
+            ></img>
+          </div>
         </div>
-
         <div className={cx("page3Body__info")}>
           <div className={cx("page3Body__infoTitle")}>
             HOME / SHOP / CLOTHING / HOODIES

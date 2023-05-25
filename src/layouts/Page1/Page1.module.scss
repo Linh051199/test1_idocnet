@@ -110,9 +110,26 @@
   align-items: flex-start;
   width: 100%;
 }
-.page1Body__sideBarFilterPriceInput {
+.page1Body__sideBarPriceRange {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  margin-bottom: 20px;
+
+  .page1Body__sideBarPriceRangeBody {
+    display: flex;
+    width: 100%;
+    input {
+      flex: 1;
+    }
+    span {
+      font-size: var(--font-size18);
+      margin-left: 10px;
+    }
+  }
+
+  button {
+    margin-top: 20px;
+  }
 }
 
 .page1Body__sideBarFilterPriceBtn {
@@ -259,6 +276,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding-right: 20px;
+  width: 100%;
 }
 
 .page1Sub__featured {
@@ -267,6 +285,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding-right: 20px;
+  width: 100%;
 }
 
 .page1Sub__rate {
@@ -275,6 +294,7 @@
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .title__media {
@@ -291,6 +311,7 @@
   opacity: 1;
   transform: translateX(0);
   transition: transform linear 0.2s;
+  display: none;
   &:hover {
     cursor: pointer;
     opacity: 0.8;
@@ -342,7 +363,7 @@
     right: 0;
     margin-right: 10px;
     margin-top: 10px;
-    font-size: var(--font-size24);
+    font-size: var(--font-size14);
     color: #ddd;
     &:hover {
       opacity: 0.8;
@@ -371,6 +392,9 @@
   .title__media {
     display: block;
   }
+  .filter__media {
+    display: block;
+  }
 
   .page1Body__content {
     margin-left: 0;
@@ -391,6 +415,9 @@
     display: none;
   }
   .title__media {
+    display: block;
+  }
+  .filter__media {
     display: block;
   }
 

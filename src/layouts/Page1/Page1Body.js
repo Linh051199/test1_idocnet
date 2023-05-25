@@ -8,6 +8,7 @@ function Page1Body() {
   const [showClothing, sewShowClothing] = useState(false);
   const [showMen, sewShowMen] = useState(false);
   const [showMusic, sewShowMusic] = useState(false);
+  const [dataRange, setDataRange] = useState(0);
 
   const handleShowClothing = () => {
     sewShowClothing(!showClothing);
@@ -163,13 +164,23 @@ function Page1Body() {
         <div className={cx("page1Body__sideBarFilterPrice")}>
           <div className={cx("page1Body__sideBarTitle")}>FILTER BY PRICE</div>
           <div className={cx("page1Body__sideBarSeparateTitle")}></div>
-          <input
-            className={cx("page1Body__sideBarFilterPriceInput")}
-            type="range"
-          />
-          <button className={cx("page1Body__sideBarFilterPriceBtn")}>
-            FILTER
-          </button>
+          <div className={cx("page1Body__sideBarPriceRange")}>
+            <div className={cx("page1Body__sideBarPriceRangeBody")}>
+              <input
+                type="range"
+                min="0"
+                max="40"
+                step="10"
+                value={dataRange}
+                onChange={(e) => setDataRange(e.target.value)}
+              />
+              <span>{dataRange}$</span>
+            </div>
+
+            <button className={cx("page1Body__sideBarFilterPriceBtn")}>
+              FILTER
+            </button>
+          </div>
         </div>
         <div className={cx("page1Body__sideBarRecently")}>
           <div className={cx("page1Body__sideBarTitle")}>Recently viewed</div>
@@ -359,13 +370,23 @@ function Page1Body() {
         <div className={cx("page1Body__sideBarFilterPrice")}>
           <div className={cx("page1Body__sideBarTitle")}>FILTER BY PRICE</div>
           <div className={cx("page1Body__sideBarSeparateTitle")}></div>
-          <input
-            className={cx("page1Body__sideBarFilterPriceInput")}
-            type="range"
-          />
-          <button className={cx("page1Body__sideBarFilterPriceBtn")}>
-            FILTER
-          </button>
+          <div className={cx("page1Body__sideBarPriceRange")}>
+            <div className={cx("page1Body__sideBarPriceRangeBody")}>
+              <input
+                type="range"
+                min="0"
+                max="40"
+                step="10"
+                value={dataRange}
+                onChange={(e) => setDataRange(e.target.value)}
+              />
+              <span>{dataRange}$</span>
+            </div>
+
+            <button className={cx("page1Body__sideBarFilterPriceBtn")}>
+              FILTER
+            </button>
+          </div>
         </div>
         <div className={cx("page1Body__sideBarRecently")}>
           <div className={cx("page1Body__sideBarTitle")}>Recently viewed</div>
