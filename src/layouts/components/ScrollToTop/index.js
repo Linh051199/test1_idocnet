@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from "react";
 import classNames from "classnames/bind";
 
-import styles from "./Page1.module.scss";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import HeaderFixed from "../components/Header/HeaderFixed";
-import SideBarAd from "../components/SideBarAd";
-import Page1Body from "./Page1Body";
-import Page1Sub from "./Page1Sub";
+import styles from "./ScrollToTop.module.scss";
 
 const cx = classNames.bind(styles);
-function Page1() {
+
+function ScrollToTop() {
   const [show, setShow] = useState(false);
+
   const [visible, setVisible] = useState(false);
 
   const controlHeader = () => {
@@ -45,14 +41,9 @@ function Page1() {
   };
 
   window.addEventListener("scroll", toggleVisible);
+
   return (
     <div>
-      {show && <HeaderFixed />}
-      <SideBarAd />
-      <Header />
-      <Page1Body />
-      <Page1Sub />
-      <Footer />
       <div
         className={cx("GoTop")}
         onClick={handleClickBtnGoTop}
@@ -66,4 +57,4 @@ function Page1() {
   );
 }
 
-export default Page1;
+export default ScrollToTop;

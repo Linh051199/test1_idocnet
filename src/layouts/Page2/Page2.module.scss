@@ -225,7 +225,8 @@
 
 .item__quickView {
   position: absolute;
-  bottom: 0;
+  z-index: 97;
+  bottom: 65px;
   font-size: var(--font-size16);
   color: var(--text-color-white);
   background-color: #4d6789;
@@ -274,6 +275,199 @@
   }
 }
 
+.item__quickViewSub {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  // .item__overlay {
+  //   position: fixed;
+  //   z-index: 98;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   right: 0;
+  // background-color: rgba(0, 0, 0, 0.5);
+
+  // }
+
+  .item__quickViewSubBtnClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+
+    font-size: var(--font-size28);
+    color: #fff;
+  }
+  .item__quickViewSubBody {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 80%;
+    display: flex;
+
+    .item__quickViewSubCarousel {
+      width: 60%;
+    }
+
+    .item__quickViewSubInfo {
+      margin-top: 40px;
+      margin-left: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .page3Body__infoSeparateName {
+        background-color: #e5e5e5;
+        height: 3px;
+        display: block;
+        width: 100%;
+        max-width: 30px;
+        margin: 20px 0 20px;
+      }
+
+      .page3Body__infoTitle {
+        font-size: var(--font-size14);
+        font-weight: var(--font-weight-medium);
+        color: #949494;
+        margin-bottom: 10px;
+      }
+
+      .page3Body__infoName {
+        font-size: var(--font-size28);
+        font-weight: var(--font-weight-bold);
+        color: #555555;
+      }
+
+      .page3Body__infoPrice {
+        font-size: var(--font-size24);
+        font-weight: var(--font-weight-bold);
+        color: #111111;
+        margin-bottom: 10px;
+      }
+
+      .page3Body__infoDesc {
+        font-size: var(--font-size16);
+        text-align: left;
+        color: #777777;
+        line-height: 2.5rem;
+      }
+
+      .page3Body__infoContact {
+        display: flex;
+        margin-top: 30px;
+      }
+
+      .page3Body__infoContactNumber {
+        display: flex;
+        font-size: var(--font-size16);
+        align-items: center;
+        justify-content: center;
+      }
+
+      .contactBtn {
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        &:hover {
+          cursor: pointer;
+          background-color: #858585;
+        }
+      }
+
+      .contactNumber {
+        padding: 10px 15px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .page3Body__infoContactBtn {
+        font-size: var(--font-size18);
+        font-weight: var(--font-weight-medium);
+        margin-left: 30px;
+        padding: 10px;
+        border: none;
+        background-color: #d26e4b;
+        color: var(--text-color-white);
+      }
+
+      .page3Body__infoCategories {
+        display: flex;
+        font-size: var(--font-size14);
+        width: 70%;
+        text-align: left;
+        margin-top: 20px;
+        padding: 5px 0;
+        border-top: 1px solid #e0dcdc;
+        color: #a1a1a1;
+
+        p {
+          color: var(--text-color-black);
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.filterPrice__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  .filterPrice__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: var(--font-size18);
+    width: 100%;
+
+    .filterPrice__slider {
+      width: 100%;
+      height: 5px;
+      background-color: #cdd9ed;
+      cursor: grab;
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    .filterPrice__bodyContacts {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+      .filterPrice__values {
+        font-size: var(--font-size14);
+      }
+    }
+  }
+}
+.page2Body__sideBarFilterPriceBtn {
+  cursor: pointer;
+}
+
+.filterPrice__slider .thumb {
+  width: 23px;
+  height: 23px;
+  cursor: grab;
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid #275efe;
+}
+.track-1 {
+  position: absolute;
+  z-index: 99;
+  background-color: black;
+}
 .item__sale {
   position: absolute;
   z-index: 97;

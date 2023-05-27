@@ -29,12 +29,12 @@
 .page1Body__sideBarSeparateItem {
   width: 100%;
   border-bottom: 1px solid #ececec;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 .page1Body__sideBarTitle {
   font-size: var(--font-size16);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-medium);
   color: #777777;
   margin-top: 50px;
   text-transform: uppercase;
@@ -60,6 +60,10 @@
   width: 100%;
   font-size: var(--font-size16);
   color: #324762;
+  &:hover {
+    color: #111;
+    cursor: pointer;
+  }
 }
 .active {
   transform: rotate(180deg);
@@ -75,6 +79,7 @@
   margin: 0 0 0 20px;
   padding: 5px;
   border-left: 1px solid #ececec;
+  cursor: pointer;
 }
 
 .page1Body__sideBarFilterColor {
@@ -132,6 +137,66 @@
   }
 }
 
+.filterPrice__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  .filterPrice__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: var(--font-size18);
+    width: 100%;
+
+    .filterPrice__slider {
+      width: 100%;
+      height: 5px;
+      background-color: #cdd9ed;
+      cursor: grab;
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    .filterPrice__bodyContacts {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+      .filterPrice__values {
+        font-size: var(--font-size14);
+      }
+    }
+  }
+}
+.page2Body__sideBarFilterPriceBtn {
+  cursor: pointer;
+}
+
+.filterPrice__slider .thumb {
+  width: 23px;
+  height: 23px;
+  cursor: grab;
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid #275efe;
+}
+.track-1 {
+  position: absolute;
+  z-index: 99;
+  background-color: black;
+}
+.page1Body__sideBarFilterPriceBtn {
+  font-size: var(--font-size14);
+  color: var(--text-color-white);
+  background-color: #666666;
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
 .page1Body__sideBarFilterPriceBtn {
   font-size: var(--font-size14);
   color: var(--text-color-white);
@@ -173,12 +238,17 @@
 }
 
 .page1Body__sideBarRecentItemImg {
+  cursor: pointer;
   margin-right: 10px;
 }
 
 .page1Body__sideBarRecentItemName {
   text-align: left;
   margin-bottom: 5px;
+  &:hover {
+    color: #111;
+    cursor: pointer;
+  }
 }
 
 .page1Body__sideBarRecentItemPrice {
@@ -377,6 +447,26 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+.btnGoTop {
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
   }
 }
 

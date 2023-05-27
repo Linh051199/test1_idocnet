@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./Page1.module.scss";
 import Item from "./Item";
+import { Link } from "react-router-dom";
+import FilterFrice from "./FilterFrice";
 
 const cx = classNames.bind(styles);
 function Page1Body() {
@@ -161,27 +163,8 @@ function Page1Body() {
             </div>
           </div>
         </div>
-        <div className={cx("page1Body__sideBarFilterPrice")}>
-          <div className={cx("page1Body__sideBarTitle")}>FILTER BY PRICE</div>
-          <div className={cx("page1Body__sideBarSeparateTitle")}></div>
-          <div className={cx("page1Body__sideBarPriceRange")}>
-            <div className={cx("page1Body__sideBarPriceRangeBody")}>
-              <input
-                type="range"
-                min="0"
-                max="40"
-                step="10"
-                value={dataRange}
-                onChange={(e) => setDataRange(e.target.value)}
-              />
-              <span>{dataRange}$</span>
-            </div>
+        <FilterFrice />
 
-            <button className={cx("page1Body__sideBarFilterPriceBtn")}>
-              FILTER
-            </button>
-          </div>
-        </div>
         <div className={cx("page1Body__sideBarRecently")}>
           <div className={cx("page1Body__sideBarTitle")}>Recently viewed</div>
           <div className={cx("page1Body__sideBarSeparateTitle")}></div>
@@ -367,7 +350,8 @@ function Page1Body() {
             </div>
           </div>
         </div>
-        <div className={cx("page1Body__sideBarFilterPrice")}>
+        <FilterFrice />
+        {/* <div className={cx("page1Body__sideBarFilterPrice")}>
           <div className={cx("page1Body__sideBarTitle")}>FILTER BY PRICE</div>
           <div className={cx("page1Body__sideBarSeparateTitle")}></div>
           <div className={cx("page1Body__sideBarPriceRange")}>
@@ -387,7 +371,7 @@ function Page1Body() {
               FILTER
             </button>
           </div>
-        </div>
+        </div> */}
         <div className={cx("page1Body__sideBarRecently")}>
           <div className={cx("page1Body__sideBarTitle")}>Recently viewed</div>
           <div className={cx("page1Body__sideBarSeparateTitle")}></div>
@@ -462,11 +446,13 @@ function Page1Body() {
       <div className={cx("page1Body__content")}>
         <div className={cx("page1Body__contentList")}>
           <div className={cx("page1Body__contentItem")}>
-            <Item
-              title="clothing"
-              numProduct="12"
-              src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_4_front-494x593.jpg"
-            />
+            <Link to="/test1_idocnet/page2">
+              <Item
+                title="clothing"
+                numProduct="12"
+                src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_4_front-494x593.jpg"
+              />
+            </Link>
           </div>
           <div className={cx("page1Body__contentItem")}>
             <Item

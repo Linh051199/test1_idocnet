@@ -6,6 +6,11 @@
   height: 40vmin;
   pointer-events: none;
 }
+ol,
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -42,6 +47,22 @@
 
 .slick-next:before {
   color: black;
+}
+.thumb {
+  position: absolute;
+  /* z-index: 99; */
+  width: 15px;
+  height: 15px;
+  cursor: grab;
+  background-color: #666666;
+  border-radius: 50%;
+  border: 1px solid black;
+  top: -5px;
+}
+.track-1 {
+  position: absolute;
+  z-index: 99;
+  background-color: black;
 }
 
 /* @media (max-width: 1023px) {

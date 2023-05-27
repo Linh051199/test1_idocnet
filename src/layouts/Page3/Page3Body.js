@@ -12,15 +12,31 @@ const cx = classNames.bind(styles);
 
 function Page3Body() {
   const [showDesc, setShowDesc] = useState("1");
-  const [numberItem, setNumberItem] = useState(0);
+  const [numberItem, setNumberItem] = useState(1);
+  const [showImage1, setShowImage1] = useState(true);
+  const [showImage2, setShowImage2] = useState(false);
 
   const handleClickSubtract = () => {
-    if (numberItem > 0) {
+    if (numberItem > 1) {
       setNumberItem(numberItem - 1);
     }
   };
   const handleClickAdd = () => {
     setNumberItem(numberItem + 1);
+  };
+
+  const handleShowImage1 = () => {
+    setShowImage1(true);
+    setShowImage2(false);
+  };
+  const handleShowImage2 = () => {
+    setShowImage1(false);
+    setShowImage2(true);
+  };
+
+  const handleMoveImg = () => {
+    setShowImage1(!showImage1);
+    setShowImage2(!showImage2);
   };
 
   return (
@@ -31,27 +47,62 @@ function Page3Body() {
             <i class="fa-solid fa-heart" style={{ fontSize: "18px" }}></i>
           </div>
           <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-bs-ride="carousel"
+            className={cx("page3Body__carouselBtn", "next")}
+            onClick={handleMoveImg}
           >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div
+            className={cx("page3Body__carouselBtn", "prev")}
+            onClick={handleMoveImg}
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div className={cx("page3Body__imageList")}>
+            <div className={cx("page3Body__imageItem")}>
+              {showImage1 && (
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_2_front.jpg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/T_7_front.jpg"
                   class="d-block w-100"
                   alt="img"
-                  // width="100%"
-                  // height="auto"
+                />
+              )}
+              {showImage2 && (
+                <img
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/T_7_back.jpg"
+                  class="d-block w-100"
+                  alt="img"
+                />
+              )}
+            </div>
+          </div>
+          {/* <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            // data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              {showImgae1 && (
+                <div class="carousel-item active">
+                  <img
+                    src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_4_front.jpg"
+                    class="d-block w-100"
+                    alt="img"
+                  />
+                </div>
+              )}
+              <div class="carousel-item active">
+                <img
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/T_7_front.jpg"
+                  class="d-block w-100"
+                  alt="img"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_2_back.jpg"
+                  src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/T_7_back.jpg"
                   class="d-block w-100"
                   alt="img"
-                  // width="100%"
-                  // height="auto"
                 />
               </div>
             </div>
@@ -81,18 +132,25 @@ function Page3Body() {
                 ></i>
               </div>
             </button>
-          </div>
+          </div> */}
           <div className={cx("page3Body__carouselImage")}>
-            <img
-              src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_2_front.jpg"
-              alt="img"
-              width="100px"
-            ></img>
-            <img
-              src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_2_back.jpg"
-              alt="img"
-              width="100px"
-            ></img>
+            <div className={showImage1 && cx("activeImg")}>
+              <img
+                src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/T_7_front-494x593.jpg"
+                alt="img"
+                width="100px"
+                onClick={handleShowImage1}
+              />
+            </div>
+
+            <div className={showImage2 && cx("activeImg")}>
+              <img
+                src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/T_7_back-494x593.jpg"
+                alt="img"
+                width="100px"
+                onClick={handleShowImage2}
+              />
+            </div>
           </div>
         </div>
         <div className={cx("page3Body__info")}>
@@ -125,7 +183,7 @@ function Page3Body() {
               </span>
             </div>
             <button className={cx("page3Body__infoContactBtn")}>
-              ADD TO CART{" "}
+              ADD TO CART
             </button>
           </div>
           <div className={cx("page3Body__infoCategories")}>
@@ -177,18 +235,62 @@ function Page3Body() {
             </Tippy>
           </div>
         </div>
-        <div className={cx("page3Body__sideBar")}></div>
+        <div className={cx("page3Body__sideBar")}>
+          <div className={cx("page3Body__sideBarIcon")}>
+            <div className={cx("page3Body__sideBarIconItem")}>
+              <i class="fa-solid fa-chevron-left"></i>
+              <img
+                src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_7_front-100x100.jpg"
+                alt="img"
+              />
+            </div>
+            <div className={cx("page3Body__sideBarIconItem")}>
+              <i class="fa-solid fa-chevron-right"></i>
+              <img
+                src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/T_6_front-100x100.jpg"
+                alt="img"
+              ></img>
+            </div>
+          </div>
+          <div className={cx("page3Body__sideBarTitle")}>
+            You may also like…
+          </div>
+          <div className={cx("page3Body__sideBarSeparate")}>
+            <div></div>
+          </div>
+          <div className={cx("page3Body__sideBarItem")}>
+            <div className={cx("page3Body__sideBarItemImg")}>
+              <img
+                src="https://flatsome3.uxthemes.com/wp-content/uploads/2013/06/hoodie_4_front-100x100.jpg"
+                alt="img"
+                width="60px"
+              ></img>
+            </div>
+            <div className={cx("page3Body__sideBarItemBody")}>
+              <div>Happy Ninja</div>
+              <span>$35,00</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div className={cx("page3Body__bottom")}>
         <div className={cx("page3Body__bottomNav")}>
           <div
-            className={cx("page3Body__bottomDesc", "active")}
+            className={
+              showDesc === "1"
+                ? cx("page3Body__bottomDesc", "active")
+                : cx("page3Body__bottomDesc")
+            }
             onClick={() => setShowDesc("1")}
           >
             DESCRIPTION
           </div>
           <div
-            className={cx("page3Body__bottomRev")}
+            className={
+              showDesc === "2"
+                ? cx("page3Body__bottomDesc", "active")
+                : cx("page3Body__bottomDesc")
+            }
             onClick={() => setShowDesc("2")}
           >
             REVIEWS (0)

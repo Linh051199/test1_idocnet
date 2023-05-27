@@ -33,6 +33,110 @@
   font-size: var(--font-size20);
 }
 
+.sideBarAd__demos {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow-y: auto;
+  height: 100vh;
+
+  .sideBarAd__demosCloseBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: var(--font-size24);
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+  .sideBarAd__demosBody {
+    display: flex;
+    flex-direction: column;
+
+    .sideBarAd__demosBodyHeader {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 90px;
+
+      h3 {
+        font-size: var(--font-size26);
+        font-weight: var(--font-weight-medium);
+        color: #555;
+        margin-bottom: 30px;
+      }
+      p {
+        width: 60%;
+        font-size: var(--font-size20);
+        color: #777;
+        line-height: 3rem;
+        margin-bottom: 70px;
+      }
+    }
+
+    .sideBarAd__demosBodySeparate {
+      position: relative;
+      width: 100%;
+      height: 2px;
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 40px;
+
+      div {
+        position: absolute;
+        left: 50%;
+        top: -15px;
+        transform: translateX(-50%);
+        font-size: var(--font-size20);
+        font-weight: var(--font-weight-medium);
+        color: #555;
+        padding: 5px 15px;
+        background-color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    .sideBarAd__demosBodyList {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .sideBarAd__demosBodyItem {
+        position: relative;
+        width: 30%;
+        margin-bottom: 30px;
+        box-shadow: 0 1px 3px -2px rgba(0, 0, 0, 0.12),
+          0 1px 2px rgba(0, 0, 0, 0.24);
+        &:hover {
+          transition: all linear 0.2s;
+          transform: translateY(-6px);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+          width: 100%;
+        }
+
+        p {
+          width: 100%;
+          height: 36px;
+          background-color: #fff;
+          font-size: var(--font-size14);
+          padding-top: 10px;
+          color: #777;
+        }
+      }
+    }
+  }
+}
+
 /* Mobile */
 @media (max-width: 739px) {
   .wrapper {

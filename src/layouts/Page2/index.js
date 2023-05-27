@@ -6,6 +6,8 @@ import Page1Sub from "../Page1/Page1Sub";
 import Page2Body from "./Page2Body";
 import HeaderFixed from "../components/Header/HeaderFixed";
 import SideBarAd from "../components/SideBarAd";
+import ScrollToTop from "../components/ScrollToTop";
+import FilterFrice from "../Page2/FilterFrice";
 
 function Page2() {
   const [show, setShow] = useState(false);
@@ -32,6 +34,7 @@ function Page2() {
       <Page2Body />
       <Page1Sub />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

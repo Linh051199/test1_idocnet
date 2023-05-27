@@ -11,10 +11,9 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/test1_idocnet/" element={<NavBarPage />}></Route>
-          <Route path="/test1_idocnet/page1" element={<Page1 />}></Route>
+          <Route path="/test1_idocnet/" element={<Page1 />}></Route>
           <Route path="/test1_idocnet/page2" element={<Page2 />}></Route>
-          <Route path="/test1_idocnet/page3" element={<Page3 />}></Route>
+          <Route path="/test1_idocnet/page2/item" element={<Page3 />}></Route>
         </Routes>
       </div>
     </Router>

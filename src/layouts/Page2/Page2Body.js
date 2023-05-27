@@ -3,6 +3,8 @@ import classNames from "classnames/bind";
 
 import styles from "./Page2.module.scss";
 import Item from "./Item";
+import { Link } from "react-router-dom";
+import FilterFrice from "./FilterFrice";
 
 const cx = classNames.bind(styles);
 
@@ -166,7 +168,8 @@ function Page2Body() {
             </div>
           </div>
         </div>
-        <div className={cx("page2Body__sideBarFilterPrice")}>
+        <FilterFrice />
+        {/* <div className={cx("page2Body__sideBarFilterPrice")}>
           <div className={cx("page2Body__sideBarTitle")}>FILTER BY PRICE</div>
           <div className={cx("page2Body__sideBarSeparateTitle")}></div>
           <div className={cx("page2Body__sideBarPriceRange")}>
@@ -186,7 +189,7 @@ function Page2Body() {
               FILTER
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className={cx("sideBar__media")}>
@@ -314,7 +317,8 @@ function Page2Body() {
         <div className={cx("page2Body__sideBarFilterPrice")}>
           <div className={cx("page2Body__sideBarTitle")}>FILTER BY PRICE</div>
           <div className={cx("page2Body__sideBarSeparateTitle")}></div>
-          <div className={cx("page2Body__sideBarPriceRange")}>
+          <FilterFrice />
+          {/* <div className={cx("page2Body__sideBarPriceRange")}>
             <div className={cx("page2Body__sideBarPriceRange")}>
               <div className={cx("page2Body__sideBarPriceRangeBody")}>
                 <input
@@ -332,7 +336,7 @@ function Page2Body() {
                 FILTER
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <label htmlFor="input__mediaPage2" className={cx("overlay")}>

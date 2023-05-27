@@ -11,6 +11,7 @@ import Page3Rev from "./Page3Rev";
 import HeaderFixed from "../components/Header/HeaderFixed";
 import SideBarAd from "../components/SideBarAd";
 import Carousel from "./Carousel";
+import ScrollToTop from "../components/ScrollToTop";
 const cx = classNames.bind(styles);
 
 function Page3() {
@@ -39,6 +40,7 @@ function Page3() {
       <Carousel />
       <Page1Sub />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
